@@ -31,7 +31,8 @@ public class Solution {
 		}
 
 		//走到这步时 n < len
-		ListNode pre = head.next;
+		ListNode pre = head;
+
 		while (fast.next != null) {
 			pre = pre.next;
 			fast = fast.next;
@@ -44,15 +45,15 @@ public class Solution {
 
 	public static void main(String[] args) {
 
-		ListNode listNode = new ListNode(0);
+		ListNode listNode = new ListNode(1);
 		ListNode tail = listNode;
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 2; i <= 5; i++) {
 			tail.next = new ListNode(i);
 			tail = tail.next;
 		}
 
 		System.out.println(listNode.toString());
-		new Solution().removeNthFromEnd(listNode,6);
+		new Solution().removeNthFromEnd(listNode,2);
 		System.out.println(listNode.toString());
 
 	}
