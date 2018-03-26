@@ -21,8 +21,8 @@ public class Quick {
 
 	private static int partition(int[] a, int lo, int hi) {
 		//随机取样法
-//		int randomNum = (int) (Math.random() * (r - l + 1) + l);
-//		swap(arr, lo, randomNum);
+		int randomNum = (int) (Math.random() * (hi - lo + 1) + lo);
+		swap(a, lo, randomNum);
 
 
 		//将数组切分为a[lo..i1], a[i], a[i+1..hi]
