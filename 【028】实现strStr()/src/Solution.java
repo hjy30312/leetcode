@@ -8,7 +8,8 @@ public class Solution {
         char[] str1 = haystack.toCharArray();
         char[] str2 = needle.toCharArray();
 
-        int i = 0,j = 0, k = 0;
+        int i = 0,j = 0;
+        //needle ==""的情况
         if (str2.length == 0) {
             return 0;
         }
