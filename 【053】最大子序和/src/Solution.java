@@ -25,7 +25,7 @@ public class Solution {
             temp = Math.max(nums[i], nums[i]+temp);
             max = Math.max(max,temp);
         }
-
+        return max;
     }
 
 
