@@ -21,6 +21,7 @@ public class Solution {
         return max;
     }
 
+
     public static void main(String[] args) {
         int ans = new Solution().lengthOfLastWord("Hello World");
         System.out.println(ans);
