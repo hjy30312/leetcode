@@ -33,9 +33,6 @@ public class Solution {
                    flag = false;
                }
             }
-        } else {
-            //无进位的情况
-            return digits;
         }
 
         int[] ans;
