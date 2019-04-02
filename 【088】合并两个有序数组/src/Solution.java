@@ -24,10 +24,10 @@ public class Solution {
                 nums3[ans++] = nums1[i++];
             }
         }
+        //剩余直接数组接后面
         while (i < m) {
             nums3[ans++] = nums1[i++];
         }
-
         while (j < n) {
             nums3[ans++] = nums2[j++];
 
