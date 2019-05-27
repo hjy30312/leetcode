@@ -1,8 +1,4 @@
-import sun.reflect.generics.tree.Tree;
-
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -66,4 +62,5 @@ public class Solution {
         t3.right = t5;
         new Solution().levelOrderBottom(t1);
     }
+
 }
