@@ -17,15 +17,14 @@ public class Solution<T> {
     }
 
 
-    public ListNode<T> reverse2(ListNode<T> head) {
+    public ListNode reverse2(ListNode head) {
         ListNode<T> pre = null;
-        ListNode<T> next = null;
-        while (head != null) {
-            next =head.next;
-            // 反指
-            next.next = pre;
-            pre = head.next;
-            head = next;
+        ListNode<T> cur = head;
+        while (cur != null) {
+            ListNode tmp = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = tmp;
         }
         return pre;
     }

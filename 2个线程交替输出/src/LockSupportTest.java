@@ -33,15 +33,24 @@ public class LockSupportTest {
             for (char c : aC) {
                 // T2阻塞
                 LockSupport.park();
-                System.out.println(c);
+                System.out.print(c);
+                // 叫醒T3
+                LockSupport.unpark(t3);
+            }
+        }, "t2");
+        t3 = new Thread(() -> {
+
+            for (char c : aD) {
+                // T3阻塞
+                LockSupport.park();
+                System.out.print(c);
                 // 叫醒T1
                 LockSupport.unpark(t1);
             }
-        }, "t2");
-
+        }, "t3");
         t1.start();
         t2.start();
-
+        t3.start();
     }
 
 
