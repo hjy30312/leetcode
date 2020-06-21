@@ -1,0 +1,4 @@
+diff a/.idea/.gitignore b/.idea/.gitignore	(rejected hunks)
+@@ -0,0 +1,2 @@
++# Default ignored files
++/workspace.xml
